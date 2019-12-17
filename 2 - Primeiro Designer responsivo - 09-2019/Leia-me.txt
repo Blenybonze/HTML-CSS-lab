@@ -1,0 +1,3 @@
+Primeiro Projeto com comportamento responsivo que fiz - também em um curso gratuito no Site Nodestudio.
+
+Não alterei e nem organizei o código, pois deixarei da forma que fiz para acompanhar o meu progresso como desenvolvedor.
