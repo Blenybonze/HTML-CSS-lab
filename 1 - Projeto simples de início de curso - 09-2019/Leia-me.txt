@@ -1,0 +1,3 @@
+Projeto BEM simples criado no início de um curso básico que fiz a respeito de HTML e CSS.
+
+Não alterei e nem organizei o código, pois deixarei da forma que fiz para acompanhar o meu progresso como desenvolvedor.
