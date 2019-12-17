@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página exemplo estrutura básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="palavras-chave da página">
+        
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    
+    <body>
+        <!-- Cabeçalho da página Principal-->
+        <div id="principal">
+            <header class="hero">
+                <nav><!-- Menu de navegação da página -->
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Quem Sou eu</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="hero-content"><!-- Div feita para colocar texto de apresentação -->
+                    <h1>Curso Web Fundamentos</h1>
+                    <p>Aprenda HTML, CSS e JavaScript</p>
+                </div> 
+            </header>
+            
+            
+         <!-- Conteúdo abaixo do cabeçalho da página -->   
+            <main><!-- Conteúdo principal dividido em duas Section -->
+                
+                <section class="content-section"><!-- Section 1 = Cards -->
+                    <div class="card card1">
+                        <img src="../imagens/card_01.png" alt="">
+                        <p>Seletores</p>
+                    </div>
+                    <div class="card card2">
+                        <img src="../imagens/card_02.jpg" alt="">
+                        <p>Posicionamento</p>
+                    </div>
+                    <div class="card card3">
+                        <img src="../imagens/card_03.jpg" alt="">
+                        <p>Fontes</p>
+                    </div>
+                </section>
+                
+                <section class="content-section"><!-- Section 2 -->
+                    <article><!-- Conteúdo principal em texto, por isto a tag Article -->
+                        <header><!-- TAG utilizada para deixar o conteúdo mais importante semanticamente -->
+                            <h2>Título do Article</h2>
+                        </header>
+                        <p>Paragrafo 1</p>
+                        <p>Paragrafo 2</p>
+                    </article>
+                </section>
+            </main>
+            
+            
+            <footer class="rodape"> <!-- Rodape da página, simples ... -->
+                <p>Copyright &copy; 2019</p>
+            </footer>
+    
+        </div>  
+    </body>
+</html>
