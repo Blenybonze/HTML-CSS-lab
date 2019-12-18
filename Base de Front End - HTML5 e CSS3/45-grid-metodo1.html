@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            .gridContainer{
+                width: 90%;
+                background: #ccc;
+                margin: 30px auto;
+            }
+
+            .gridItem{
+                background-color: orange;
+                padding: 15px;
+                font-family: sans-serif;
+            }
+            
+            /* GRID */
+            .gridContainer{ /*Formatando todo o Container selecionado - Aplicando Display Grid para formatação futura, criando 3 colunas com 1fr cada, em seguida colocando o tamanho das linhas e um grid gap para afastar uma grid da outra */
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 100px 50px 1fr 50px;
+                grid-gap: 20px;
+            }
+            
+            .header{ /*Formatando o header para ocupar lateralmente todo o espaço disponível da coluna 1 até a ultima (-1)*/
+                grid-column: 1 / -1
+            }
+            
+            .nav{ /*Formatando o nav para ocupar o espaço de duas colunas - ocupando da primeira linha até a terceira (Penultima linha de coluna)*/
+                grid-column: 1 / 3;
+            }
+            .aside{ /*Fazendo o Aside ocupar da terceira linha até a ultima linha de coluna e também da 2 linha até a ultima na vertical*/
+                grid-row: 2 / -1;
+                grid-column: 3 / 4;
+            }
+            .main{ /*fazendo o main ocupar da primeira até a terceira linha de coluna e aplicando um tamanho*/
+                grid-column: 1 / 3;
+                min-height: 200px;
+            }
+            
+            .footer{ /*Fazendo o footer ocupar da primeira até a ultima linha de coluna. antes de aplicar o grid row o footer e o aside estavam brigando pela posição do lado inferior direito, com esta aplicação deixei claro que o footer deve ficar por cima*/
+                grid-column: 1 / -1;
+                grid-row: 4 / 5;
+                background: red;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+        
+        
+        <div class="gridContainer">
+            <header class="header gridItem">header</header>
+            <nav class="nav gridItem">nav</nav>
+            <aside class="aside gridItem">aside</aside>
+            <main class="main gridItem">
+                main
+            </main>
+            <footer class="footer gridItem">footer</footer>
+        </div>
+        
+        
+    </body>
+</html>

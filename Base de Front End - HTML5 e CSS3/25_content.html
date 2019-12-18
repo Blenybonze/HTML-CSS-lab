@@ -1,0 +1,60 @@
+<!DOCTYPE html><!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    
+    <head>
+        <title>Página de Exemplo - Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="palavra chave, para, mecanismos de buscas">
+    
+        <style>
+            div{
+                border: 3px solid red;
+                padding: 25px;
+                position: relative; /*Tag utilizada para controlar futuras edições, por exemplo o POSITION ABSOLUTE localizado logo abaixo na div:after*/
+                margin: 25px;
+            }
+            div:before{
+                content: "before: ";
+                background: #ccc
+            }
+            div:after{
+                content: "";
+                background: red;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                position: absolute; /*Position sendo controlado pela DIV principal*/
+                bottom: 0;/*Utilizado para controlar a posição do POSITION*/
+                right: 0;/*utilizado para controlar a posição do POSITION*/
+            }
+        </style>
+    
+    </head>
+    
+    
+    <body>
+        
+        <div>Texto principal da div</div>
+        
+        <article>
+            <h3>
+                Título
+            </h3>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+        </article>
+        
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="http://serfrontend.com" target="_blank">Link externo</a></li> <!-- Abrindo link externo em nova guia -->
+            <li><a href="http://serfrontend.com/qq.pdf" target="_blank">Link externo pdf</a></li> <!-- Abrindo link externo em nova guia -->
+            <li><a href="23_transition.html" title="nada">Link interno</a></li>
+        </ul>
+        
+    </body>
+    
+</html>

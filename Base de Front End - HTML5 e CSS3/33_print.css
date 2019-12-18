@@ -1,0 +1,11 @@
+body{
+    font-family: sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+a:after{
+    content: "( "attr(href)")"; /*Colocar link que está na tag HREF na página de impressão*/
+    display: inline-block;
+    margin: 0 10px;
+}

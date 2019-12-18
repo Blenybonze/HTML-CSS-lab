@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            .gridContainer{
+                width: 90%;
+                background: #ccc;
+                margin: 30px auto;
+            }
+
+            .gridItem{
+                background-color: orange;
+                padding: 15px;
+                font-family: sans-serif;
+            }
+            
+            /* GRID */
+            .gridContainer{ /*Formatando todo o Container selecionado - Aplicando Display Grid para formatação futura, criando 3 colunas com 1fr cada, em seguida colocando o tamanho das linhas e um grid gap para afastar uma grid da outra */
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 100px 50px 1fr 50px;
+                grid-gap: 20px;
+                
+                grid-template-areas:   /*Essa forma de trabalhar com a grid torna tudo muito mais fácil, desta forma posso apenas ditar onde cada grid-area ficará no template, poupando tempo e aumentando produtividade.*/
+                    "header header  header" /*Header ocupando 3 colunas na primeira linha*/
+                    "nav    nav     aside" /*Nav ocupando duas colunas e o Aside uma na segunda linha*/
+                    "main   main    aside" /*Main ocupando duas colunas e o aside uma na terceira linha*/
+                    "footer footer  footer" /* Footer ocupando todas as colunas na 4 linha*/
+            }
+            
+            .header{ 
+                grid-area: header; /*Formatando e dando nome de grid-area para o header*/
+            }
+            .nav{ 
+                grid-area: nav; /*Formatando e dando nome de grid-area para o nav*/
+            }
+            .aside{ 
+                grid-area: aside; /*Formatando e dando nome de grid-area para o aside*/
+            }
+            .main{ 
+                grid-area: main; /*Formatando e dando nome de grid-area para o main e aplicando uma altura, pois geralmente o main contém maior parte do conteúdo da página*/
+                height: 200px;
+            }
+            .footer{ /*Formatando e dando nome de grid-area para o footer*/
+                grid-area: footer;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+        
+        
+        <div class="gridContainer">
+            <header class="header gridItem">header</header>
+            <nav class="nav gridItem">nav</nav>
+            <aside class="aside gridItem">aside</aside>
+            <main class="main gridItem">
+                main
+            </main>
+            <footer class="footer gridItem">footer</footer>
+        </div>
+        
+        
+    </body>
+</html>

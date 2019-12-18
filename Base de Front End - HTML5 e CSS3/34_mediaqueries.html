@@ -1,0 +1,89 @@
+<!DOCTYPE html><!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    
+    <head>
+        <title>Página de Exemplo - Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="palavra chave, para, mecanismos de buscas">
+    
+        <meta name="viewport" content="width=device-width">
+        
+        <style>
+            body{
+                background: yellow;
+                font-size: 16px;
+            }
+        
+            .teste{
+                background: red;
+                width: 320px;
+                height: 50px;
+            }
+            
+            .container{
+                background: white;
+                padding: 15px;
+                font-size: 24px;
+            }
+            
+            .container div{
+                background: black;
+                margin-bottom:15px;
+                height: 150px;
+                color: white;
+                font-size: 22px;
+            }
+            
+            
+            
+            .clearfix::after{ /*Classe criada para limpar a quebra de Layout do FLOAT*/
+                content: ' ';
+                display: block;
+                clear: both;
+            }
+            
+            @media screen and (min-width: 600px){
+                body{
+                    background: orange;
+                }
+                
+                .container div{
+                    width: 23%;
+                    float: left;
+                    margin-bottom: 0;
+                    margin: 1%;
+                }
+            }
+                
+            
+                
+        </style>
+    
+    
+    </head>
+    
+    
+    <body>
+        <h1>Exempplo de media queries</h1>
+        
+        
+        
+        <p>Parágrafo Qualquer</p>
+        
+        <div class="teste"></div>
+        
+        
+        <div class="container clearfix">
+            
+            <div>Div 1</div>
+            <div>Div 2</div>
+            <div>Div 3</div>
+            <div>Div 4</div>
+        </div>
+        
+        
+    </body>
+    
+</html>

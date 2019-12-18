@@ -1,0 +1,126 @@
+<!DOCTYPE html><!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    
+    <head>
+        <title>Seletores</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="palavra chave, para, mecanismos de buscas">
+    
+        <style>
+            article:nth-child(1) a{ /*Selecionando toda a dento do primeiro article*/
+                color: red;
+            }
+            
+            article:nth-child(3) > p { /*selecionando todo p que seja filho direto do article*/
+                color: orange
+            }
+            
+            article:nth-child(5) h3 + p { /*Selecionando o primeiro filho após um h3*/
+                color: green;
+            }
+            
+            article:nth-child(7) h3 ~ p { /*selecionando todo p que vem após um h3 */
+                color: blue;
+            }
+            
+            article:not(.destaque){ /*Selecioanndo todos Article que não possuem a class .destaque*/
+                text-decoration: underline;
+            }
+            
+            .destaque{ /*Class criada para teste*/
+                background: yellow;
+            }
+            
+            a[href="#"]{ /*Todo a que tem um valor, por exemplo: href="#"*/
+                opacity: .2;
+            }
+            a[href^="http"]{ /*Todo a que comece com um valor, por exemplo: http*/
+                color: red;
+            }
+            a[title]{
+                color: green;
+            }
+            a[href$=".pdf"]{
+                text-decoration: none;
+            }
+        
+        </style>
+    
+    </head>
+    
+    
+    <body>
+        
+        <article>
+            <h3>
+                Título
+            </h3>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+        </article>
+        <hr>
+        <article>
+            <h3>
+                Título
+            </h3>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+        </article>
+        <hr>
+        <article>
+            <h3>
+                Título
+            </h3>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+        </article>
+        <hr>
+        <article class="destaque">
+            <h3>
+                Título
+            </h3>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+            <p> Paragrafo <a href="#">Apenas um link com <b>negrito</b> </a> </p>
+        </article>
+        
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="http://serfrontend.com" target="_blank">Link externo</a></li> <!-- Abrindo link externo em nova guia -->
+            <li><a href="http://serfrontend.com/qq.pdf" target="_blank">Link externo pdf</a></li> <!-- Abrindo link externo em nova guia -->
+            <li><a href="23_transition.html" title="nada">Link interno</a></li>
+        </ul>
+        
+        
+        
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculadora</title>
+
+	<style>
+
+	body{
+		font-family: sans-serif;
+	}
+
+	#calculator{ /*Container princpal*/
+        width: 200px; /*Aplicando largura*/
+        margin: 15px auto; /*Aplicando margem em cima/baixo e centralizando*/
+        padding: 20px; /*Aplicando espaçamento interno*/
+        background: #ccc; /*Aplicando cor de fundo*/
+        border-radius: 5px; /*Arredondando a borda*/
+        box-shadow: 0 0 10px rgba(0,0,0,.8); /*Aplicando sombra nas bordas*/
+        
+        display: grid; /*Ativando formatação de GRID*/
+        grid-gap: 5px; /*Aplicando espaçamento das linhas*/
+        grid-template-columns: repeat(4, 1fr); /*criando colunas - 4 colunas com o tamanho de 1fr*/
+        grid-template-rows: auto repeat(5,40px); /*Automatizando o tamanho e Criando linhas - 5 linhas de 40px cada*/
+        grid-template-areas:"display display display display"; /*Informando que o display ocupa as 4 colunas da primeira linha*/
+    }
+
+	button{
+		padding: .25em; /*espaçamento interno dos botões*/
+	}
+
+	#display{ /*Area responsável pelo 0*/
+        padding: 10px;  
+        font-size: 1.4em; 
+        text-align: right;
+        background: #eaeaea;
+        box-shadow: inset 3px 2px 0 white; /*Aplicando sombra nas bordas da esquerda e topo*/
+        
+        margin-bottom: 20px; /*Aplicando uma margem*/
+        grid-area: display; /*/informando o nome de grid-area*/
+	}
+
+	.mais{
+        grid-column: 4/5; /*Informando quais colunas o .mais ocupará*/
+        grid-row: 5/7;/*Informando quais linhas o .mais ocupará*/
+        background: #ccc;
+	}
+
+	.zero{
+		grid-column: 1/3; /*Informando quais colunas o .zero ocupará*/
+        background: #ccc;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="calculator">
+		<div id="display">0</div>
+		
+		<button>AC</button> <button>%</button> <button>x</button> <button>/</button> 
+		<button>7</button> <button>8</button> <button>9</button> <button>=</button>
+		<button>4</button> <button>5</button> <button>6</button>  <button>-</button> 
+		<button>1</button> <button>2</button> <button>3</button> <button class="mais">+</button>
+        <button class="zero">0</button> <button>,</button>  
+		
+	</div>
+
+<!--	<img src="https://static.webshopapp.com/shops/038765/files/063260238/geeek-bamboo-wooden-calculator-calculator.jpg" style="width: 250px">-->
+
+</body>
+</html>
