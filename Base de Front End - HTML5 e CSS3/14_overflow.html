@@ -1,0 +1,63 @@
+<!DOCTYPE html><!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    
+    <head>
+        <title>TAG Overflow</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="palavra chave, para, mecanismos de buscas">
+        
+        <style>
+            div{
+                padding: 2%;
+                margin: 100px 2%;
+                border: 1px solid black;
+                width: 20%;
+                float: left;
+                height: 100px;
+                font-family: sans-serif;
+                font-size: 18px;
+            }
+            
+            .div1{
+                overflow: visible; /*Como padrão o conteúdo que ultrapassa o limite do BOX fica visível*/
+            }
+            .div2{
+                overflow: hidden;/*Escondendo o conteúdo que ultrapasse o outro, neste caso, a .div2*/
+            }
+            .div3{
+                overflow: scroll;/*Cria um BOX com scrol de rolagem para vizualizar o conteúdo que ultrapassaria o limite*/
+            }
+            .div4{
+                overflow: auto; /*Se tiver necessidade, adiciona o scrol, se não, não aplica nenhuma ação*/
+            }
+        
+        </style>
+        
+        
+    </head>
+    
+    
+    <body>
+        <div class="div1">
+        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro sdsdsds sd sd sd sdsdsd  </p>   
+        </div>
+        
+        
+        <div class="div2">
+        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+        
+        
+        <div class="div3">
+        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+        
+        
+        <div class="div4">
+        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        </div>
+    </body>
+    
+</html>

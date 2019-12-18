@@ -1,0 +1,98 @@
+ <!DOCTYPE html><!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    
+    <head>
+        <title>Página de Exemplo - Estrutura Básica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="palavra chave, para, mecanismos de buscas">
+    
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            table{
+                border-collapse: collapse;
+                width: 80%;
+                margin: auto;
+                background: beige;
+            }
+            td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+            th{
+                background: #daf2a4;
+                border: 2px solid chocolate;
+            }
+            
+        </style>
+    </head>
+    
+    
+    <body>
+        
+        <table>
+            <caption>Tabela de Preços de Cursos</caption> <!-- Título da Tabela -->
+            
+            
+            <thead> <!-- Cabeçalho da Tabela -->
+                <tr> <!-- Cria a linha da Tabela -->
+                    
+                    <th>Área</th><!-- Conteúdo do bloco de Cabeçalho da Tabela -->
+                    <th>Curso</th><!-- Conteúdo do bloco de Cabeçalho da Tabela -->
+                    <th>Investimento</th><!-- Conteúdo do bloco de Cabeçalho da Tabela -->
+                </tr>
+            </thead>
+            
+            
+            <tfoot> <!-- Rodapé da Tabela -->
+                <tr> <!-- Cria a linha da Tabela -->
+                    <td colspan="3">Valores sujeitos a alterações sem prévio aviso.</td><!-- Conteúdo do bloco de da Tabela / COLSPAN dita quantas colunas da esquerda para direita esta linha ocupará -->
+                </tr>
+            </tfoot>
+                
+            
+            <tbody> <!-- Corpo da Tabela da Tabela -->
+                <tr><!-- Cria a linha da Tabela -->
+                    <td rowspan="3">Designer</td><!-- Conteúdo do bloco de da Tabela / ROWSPAN dita quantas Linhas de cima para baixo esta linha ocupará -->
+                    <td>InDesigner</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr><!-- Cria a linha da Tabela -->
+                    <td>Photoshop</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr><!-- Cria a linha da Tabela -->
+                    <td>Ilustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr><!-- Cria a linha da Tabela -->
+                    <td rowspan="4">Development</td>
+                    <td>HTML5</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr><!-- Cria a linha da Tabela -->
+                    <td>CSS3</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr><!-- Cria a linha da Tabela -->
+                    <td>JavaScript</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr><!-- Cria a linha da Tabela -->
+                    <td>PHP</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

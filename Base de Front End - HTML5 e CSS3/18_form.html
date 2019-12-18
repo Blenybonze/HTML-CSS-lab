@@ -1,0 +1,124 @@
+<!DOCTYPE html><!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    
+    <head>
+        <title>Formulário exemplo</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="palavra chave, para, mecanismos de buscas">
+        
+        <style>    
+            label{
+                display: block;
+                margin: 10px 0;
+            }
+            
+            input{
+                margin: 0;
+            }
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        <h1>Formulário exemplo</h1>
+        
+        <form action="#" method="post" class="formlogin"><!-- Abertura de formulário -->
+            <fieldset>
+                <legend>Dados pessoais</legend> <!-- Dá uma legenda ao bloco do formulário-->
+                
+                
+                <label class="email" for="email">Email</label><!-- O Label serve para criar um texto se referindo ao input desejado / Atributo FOR utilizado para interligar o label ao input pelo ID-->
+                <input class="email2" type="email" id="email" required autofocus placeholder="Atributo para este efeito"><!-- Atributo REQUIRED obriga o usuário a preencher o campo / PLACEHOLDER aplica um texto de fundo no campo que será digitado / AUTOFOCUS abre a página com o cursor no input desejado -->              
+                
+                <label for="filhos">Numeros de Filhos</label>
+                <input type="number" id="filhos" min="0" max="1000" required> <!-- Se tratando de input que relacionam numeros, podemos colocar um numero minimo e um maximo -->
+                
+                <label for="aniversario">DATA de Aniversário</label>
+                <input type="date" id="aniversario" required> 
+                
+                <label>Número de TELEFONE</label> 
+                <input type="tel" required>
+                
+                <label>URL</label>
+                <input type="url" required>
+                
+                
+                <p>Sexo</p>
+                <label><!-- Colocando o INPUT dentro da LABEL dá a opção de marcar o type:RADIO clicando sobre o texto-->
+                    <input type="radio" name="sexo" value="M" required>Masculino<!-- O NAME sendo igual nas duas opções torna possível a seleção de apenas uma das opções -->
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="F" required>Feminino
+                </label>
+                
+                
+                <input type="hidden" name="expira" value="2019-11-2019">
+                
+                
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado"><!-- Forma mais utilizada para criar caixinha selecionavel -->
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option><!-- A opção selecionada entrega o VALUE para o SELECT que entrega a informação para o LABEL(Quando interligados pelo ID)-->
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+                <label for="opcao">Multipla escolha</label>
+                    <select id="opcao" name="opcao" size="5" multiple> <!-- Atributo SIZE dita a quantidade de opções que aparecera para o usuario selecionar / Atributo MULTIPLE dita que o usuário pode selecionar mais de uma opção, se assim desejar -->
+                        <option value="1">Opção1</option>
+                        <option value="2">Opção2</option>
+                        <option value="3">Opção3</option>
+                        <option value="4">Opção4</option>
+                    </select>
+                
+            </fieldset>
+            
+            
+            
+            <fieldset class="interesse">
+                <legend>Área de Interesse</legend>
+                    
+                <label><!-- Colocando o INPUT dentro da LABEL dá a opção de marcar o type:CHECKBOX clicando sobre o texto-->
+                    <input type="checkbox" name="html" value="html">HTML 
+                </label>
+                <label>
+                     <input type="checkbox" name="css" value="css">CSS<!-- Type:CHECKBOX cria uma caixa selecionável -->
+                 </label>
+                 <label>
+                    <input type="checkbox" name="javascript" value="js">Javascript
+                  </label>
+             </fieldset>
+            
+            
+            
+            <fieldset>
+                <legend>Mensagem</legend>
+                
+                <textarea style="resize: none" name="msg" cols="30" rows="10" maxlength="300"></textarea> <!-- Área que cria um box de texto onde o usuário pode digitar informações solicitadas livremente / CSS - RESIZE: NONE; dita que o usuário não poderá alterar o tamanho do bloco / Atributo COLS dita a quantidade de letras que será visível no box de forma lateral / Atributo ROWS dita a quantidade de linhas que será visível no box / Atributo MAXLENGTH dita a quantidade máxima de caracteres permitido -->
+                
+                <textarea style="resize: none" name="contrato" cols="30" rows="10" readonly>Área de Contrato Que NÃO PODE SER EDITADO</textarea> <!--CSS - RESIZE: NONE; dita que o usuário não poderá alterar o tamanho do bloco / Atributo READONLY  -->
+                
+                <label><input type="checkbox" checked>Li e Aceito</label> <!-- Atributo CHECKED marca o CHECKBOX automaticamente assim que a página for carregada-->
+                
+                <label>SCROL</label>
+                <input type="range" min="0" max="10" step="1">  <!-- STEP dita a quantidade de números que será selecionado no RANGE -->
+                
+                <label>Caixa de horário</label>
+                <input type="time"> <!-- Coloca caixa de HORARIO -->
+                
+                <label>selecione uma cor</label>
+                <input type="color"> <!-- Bloco de cores -->
+                
+            </fieldset>
+            
+            
+            
+            <input type="submit" value="enviar">
+            <input type="button" value="button">
+            <input type="reset" value="reset">
+            
+        </form>
+    </body>
+</html>

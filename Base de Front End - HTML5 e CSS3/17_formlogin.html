@@ -1,0 +1,90 @@
+<!DOCTYPE html><!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    
+    <head>
+        <title>Formulário exemplo</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="palavra chave, para, mecanismos de buscas">
+    
+        <style>
+            .formlogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif; 
+            }
+            
+            
+            .formlogin label{
+                margin-top: 15px;
+                display: block;
+            }
+            
+            
+            .formlogin fieldset{
+                background-color: #ccc;
+                border-radius: 5px;   
+            }
+            
+            
+            .formlogin legend{
+                background-color: white;
+                display: inline-block;
+                padding: 10px;
+                border: 1px solid black;   
+            }
+            
+            
+            #user, #pass, .btnlogin{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px;
+                font-size: 18px;
+                border: none;
+            }
+            #user:focus, #pass:focus{
+                background-color: aqua;
+            }
+            
+            
+            .btnlogin{
+                margin-top: 15px;
+                transition: border 0.2s linear;
+            }
+            .btnlogin:hover{
+                box-sizing: border-box;
+                padding: auto;
+                border: 1px solid red;
+                cursor: pointer;
+            }
+            
+            
+            #user{
+                margin-bottom: 15px;
+            }
+        </style>
+    
+    </head>
+    
+    
+    <body>
+        <h1>Formulário exemplo</h1>
+        
+        <form action="#" method="post" class="formlogin"><!-- Abertura de formulário -->
+            <fieldset>
+                <legend>Login</legend>
+                
+                <label for="user">Digite o seu usuario</label>
+                <input type="text" id="user" name="user" autofocus><!-- deve ser o mesmo nome do backend -->
+                
+                 <label for="pass">Digite a senha</label>
+                <input type="password" id="pass" name="pass"><!-- deve ser o mesmo nome do backend --> 
+                
+                <input type="submit" value="logar" class="btnlogin"> 
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
