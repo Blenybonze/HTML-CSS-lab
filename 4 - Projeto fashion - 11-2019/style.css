@@ -1,0 +1,202 @@
+body{
+    font-family: tahoma, arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    width: 1024px;
+}
+
+
+
+
+
+
+/*Menu de Navegação*/
+.menu {
+    background-image: url(imagens/topo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 488px;
+}
+
+.menunavegacao{
+    border: solid transparent;
+    background-color: #030a10;
+    
+}
+
+.menu img{
+    float: left;
+    margin: 10px 0 0 200px;
+    width: 120px
+}
+
+.menunavegacao li{
+    list-style: none; 
+    display: inline-block;
+    margin-left: 50px;
+ }  
+.menunavegacao ul{
+    text-align: right;
+    margin-right: 60px;
+}
+.menunavegacao a{
+    text-decoration: none;
+    color: #1c3748;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: color 0.5s linear;
+}
+.menunavegacao a:hover{
+    color: white;
+}
+
+
+    
+
+
+/*Descrição*/
+.descricao{
+    width: 100%;
+    text-align: center;
+}
+
+.descricao h1{
+    font-size: 70px;
+    margin-top: 70px
+}
+.descricao p{
+    font-size: 25px;
+    margin: 20px 10%;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+/*Cards*/
+.content-card{
+    overflow: auto;
+    width: 100%;
+    margin: 100px auto;
+    
+}
+.card{
+    width: 32%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+.card1, .card2{
+    margin-right: 2%
+}
+.card img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+
+    
+
+
+
+
+
+/*Descrição 2 com imagem de fundo*/
+.fundoimg{
+    width: 100%;
+}
+
+.textofrente {
+    background-color: #003d52;
+    padding: 100px;
+    color: white;
+    background-image: url(imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+}
+.textofrente h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.textofrente p{
+    font-size: 18px;
+    line-height: 1.5;
+    width: 70%;
+}
+
+
+
+
+
+
+
+/*Contato*/
+.contato{
+    text-align: center;
+    text-transform: uppercase;
+    color: #143f52;
+    margin: 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*Mapa*/
+.mapa {
+    width: 100%;
+    margin: 20px auto;
+    border: 0px solid transparent;
+    
+}
+
+
+
+
+
+
+
+
+/*Rodape*/
+footer{
+    background: #0b171f;
+    padding:25px;
+    box-sizing: border-box;
+    font-size: 12px;
+    letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
+    color: #6f8597;
+    margin: 20px auto;
+}
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
