@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Nome da Empresa</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bleny Bonze">
+        <meta name="description" content="DESCRIÇÃO DA PÁGINA">
+        <meta name="keywords" content="Palavras-CHAVE"> 
+        
+        
+        <!-- GOOGLE ICONES -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- FONT AWESOME -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        <!-- MATERIALIZE -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/style.css">   
+        
+    </head>
+
+    
+    
+    <body>
+        <header id="menu">
+            <!-- Menu Mobile -->
+            <ul class="side-nav menumobile" id="menu-mobile">
+                <li><a class="hide-menu" href="#home">Home</a></li>
+                <li><a class="hide-menu" href="#sobre">Sobre nós</a></li>
+                <li><a class="hide-menu" href="#servicos">Serviços</a></li>
+                <li><a class="hide-menu" href="#contato">Contato</a></li>
+            </ul>
+            
+            
+            <!-- LOGIN -->
+            
+                <form action="#" method="post" class="form-login side-nav center" id="login">
+                    <legend class="center verdenavc titulo">Login</legend>
+                    
+                    <div class="input-field">
+                        <label for="email">Usuário</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                        
+                    <div class="input-field">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" required>
+                    </div>
+                        
+                    <button class="btn btnefeito verdenav" type="submit">Enviar</button>                   
+                    <p class="center light">Não tem uma conta?</p>    
+                    <button class="btn btnefeito verdenav" type="submit">Cadastre-se</button>                   
+                </form>
+            
+            
+            
+            <!-- Menu Desktop -->
+            <div class="navbar-fixed z-depth-0 menufixo">
+                <nav class="menu">
+                    <a class="imagem-logo" href="#home"><img src="img/logoexemplo2.png" alt="Imagem Logo"></a>
+                    
+                    <ul class="icons-nav right">
+                           <li> <a href="#" data-activates="menu-mobile" class="center button-collapse btnmenu"><i class="material-icons">menu</i></a></li>
+                            <li><a href="#" class="btnlogin center" data-activates="login"><i class="material-icons">account_circle</i></a></li>
+                    </ul>
+                    
+                    <ul class="right light hide-on-med-and-down" id="menu-desktop">
+                            <li><a  href="#home">Home</a></li>
+                            <li><a  href="#sobre">Sobre nós</a></li>
+                            <li><a  href="#servicos">Serviços</a></li>
+                            <li><a  href="#contato">Contato</a></li>
+                     </ul>
+                    
+                    
+                    
+                    
+                    
+                </nav>
+                
+            </div>
+        </header>
+
+
+
+        <!-- HOME -->
+        <section class="scrollspy" id="home">
+            <div class="textohome container">
+                <div class="home">
+                    <h1>Encontre o Dentista ideal para você!</h1>
+                    
+                    <div class="col s12 formfiltro">  
+                        <form action="#" method="get">
+                                <label for="estado"></label>
+                                <select name="estado" class="formenu" id="estado">
+                                    <option value="0">Especialidade</option>
+                                    <option value="OD">Odontologia</option>
+                                    <option value="EDD">Endodontia</option>
+                                    <option value="PRD">Periodontia</option>
+                                    <option value="PD">Prótese Dentária</option>
+                                    </select>
+                            
+                            <label for="estado"></label>
+                                <select name="estado" class="formenu" id="estado">
+                                    <option value="0">Estado</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </select>
+                                
+                            <button type="submit" class="btn btnefeito verdenav">Pesquisar</button>
+                            
+                        </form>
+                    </div>
+                    
+                </div>   
+            </div>
+        </section>
+
+        
+
+
+        <!-- Sobre nós -->
+        <section class="divsobre scrollspy" id="sobre">
+            <div class="descricao">
+                <div class="col s12 l6 sobre">
+                    <h2 class="titulo">O que é a <strong>Empresax?</strong></h2>
+                </div>
+
+                <div class="row container teste">
+                    <div class="col s12 l6">
+                        <p class="center">Este é um projeto realizado por dentistas para facilitar o contato entre profissionais e pacientes, trazendo uma experiência mais rápida e segura, garantindo a qualidade desse serviço e a confiança do paciente.Udent é um projeto realizado por dentistas para facilitar o contato entre profissionais e pacientes, trazendo uma experiência mais rápida e segura, garantindo a qualidade desse serviço e a confiança do paciente.
+                    </div>
+
+
+                    <div class="slide col s12 l6 ">
+                        <div class="carousel carousel-slider carousel-sobre " data-indicators="true">
+                            <img class="carousel-item responsive-img" alt="Imagem Institucional" src="img/sobre02.png">
+                            <img class="carousel-item responsive-img" alt="Imagem Institucional" src="img/rodape-sobre.png">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="missao-visao-valores verdenav">
+                <div class="container">
+                    <article class="col s12 m4 center missao" id="missao">
+                        <span class="icon"><i class="material-icons medium">business_center</i></span>
+                        <h3 class="light">Missão</h3>
+                        <p class="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                    </article>
+
+
+
+                    <article class="col s12 m4 center visao" id="visao">
+                        <span class="icon"><i class="material-icons medium">camera</i></span>
+                        <h3 class="light">Visão</h3>
+                        <p class="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                    </article>
+
+
+                    <article class="col s12 m4 center valores" id="valores">
+                        <span class="icon"><i class="material-icons medium">check_box</i></span>
+                        <h3 class="light">Valores</h3>
+                        <p class="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen  </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section class="row servicos scrollspy" id="servicos">
+            <div class="container">
+                <div class="col s12 center">
+                    <h2 class="light titulo white-text">Serviços</h2>
+                    <p class="paragrafo light white-text">Visando aproximar o cliente do profissional solicitado prestamos serviços a ambos os públicos.</p>
+                </div>
+            </div>
+
+
+            <div class="container"> 
+                <!-- Para Pacientes -->
+            <article class="col s12 m6 l3 pacientes">
+                <div class="card center">
+                    <div class="carousel carousel-slider slide" data-indicators="true">
+                        <img class="carousel-item" alt="Imagem Institucional" src="img/Parapacientes01.png">
+                        <img class="carousel-item" alt="Imagem Institucional" src="img/Parapacientes02.png">
+                    </div>
+
+                    <div class="card-content">
+                        <h3 class="titulo-imagem">Para <strong class="verdenavc">Pacientes</strong></h3>
+                        <p class="light">Venha fazer parte da nossa comunidade, encontre Dentistas e Especialistas e poupe tempo e dinheiro!</p>
+                        <h4><b class="verdenavc">R$0,00</b> por mês</h4>
+                        <ul>
+                            <li>Agende sua consulta!</li>
+                            <li>Avalie seu Dentista!</li>
+                            <li>Encontre os melhores preços!</li>
+                            <li>Não perca tempo!</li>
+                        </ul>
+                        <a class="btn btnefeito verdenav center" href="login">Cadastrar</a>
+                     </div>
+                </div>
+            </article>
+
+
+            <!-- Para Dentistas -->
+                <article class="col s12 m6 l3 dentistas">
+                    <div class="card center">
+                        <div class="carousel carousel-slider slide " data-indicators="true">
+                            <img class="carousel-item" alt="Imagem Institucional" src="img/paradentistas01.png">
+                            <img class="carousel-item" alt="Imagem Institucional" src="img/home2.png">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="titulo-imagem">Para <strong class="verdenavc">Dentistas</strong></h3>
+                            <p class="light">Venha fazer parte da nossa comunidade, encontre pacientes e melhore o seu processo de agendamento!</p>
+                            <h4><b class="verdenavc">R$49,00</b> por mês</h4>
+                            <p><b>Primeiro mês grátis!</b></p>
+                            <ul>
+                                <li>Encontre novos pacientes;</li>
+                                <li>Mantenha contato com pacientes;</li>
+                                <li>Economize custos e tempo!</li>
+                            </ul>
+                            <a class="btn btnefeito verdenav center" href="login">Cadastrar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- Midias sociais e contato -->
+        <section class="contato scrollspy" id="contato">
+            <div class="row container center">
+                <div class="col s12 center">
+                    <h2 class="titulo">Contato</h2>
+                </div>
+
+                <div class="mapa col s12 m6 l4 hide-on-med-only">
+                    <div class="transparent">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5305.854642408602!2d-43.96960040373751!3d-19.890420646209545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699c38239d527%3A0xdd57d85a12f2b59b!2sShopping%20Del%20Rey!5e0!3m2!1spt-BR!2sbr!4v1570405337151!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="informacoes white-text">
+                        <h3>Redes sociais</h3>
+                        <p class="light">Fique por dentro das novidades e receba dicas nos seguindo!</p>
+                        <a href="#" id="Facebook" class="btn-floating verdenav"><i class="fa fa-facebook"></i></a>
+                        <a href="#" id="Instagram" class="btn-floating verdenav"><i class="fa fa-instagram"></i></a>
+                        <a href="#" id="twitter" class="btn-floating verdenav"><i class="fa fa-twitter"></i></a>
+
+                        <h3>Endereço</h3>
+                        <p class="light">Rua ......, 123<br>
+                        Bairro, Município - Estado</p>
+
+                        <h3>Contato</h3>
+                        <p class="light">(xx)xxxxx-xxxx<br>
+                        (xx)xxxxx-xxxx<br>
+                        (xx)xxxxx-xxxx</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="formulario" id="formulario">
+                        <h2>Fale conosco</h2>
+                        <p>Dúvidas, críticas ou sugestões? entre em contato conosco, seu feedback é muito importante.</p>
+                        <div class="formcontato col s12">
+                            <form action="#" method="post" class="formensagem">
+
+                                <div class="input-field">
+                                    <input type="email" name="email" id="email" required>
+                                    <label for="email">e-mail</label>
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="tel" name="telefone" id="telefone" required>
+                                    <label for="telefone">Telefone</label>
+                                </div>
+
+                                <div class="input-field">
+                                    <textarea name="texto" id="texto" class="materialize-textarea" required></textarea>
+                                    <label for="texto">Escreva aqui</label>
+                                </div>
+
+                                <button class="btn btnefeito verdenav" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Rodapé -->
+        <footer class="rodape" id="rodape">
+            <div class="container center">
+                <img src="img/logoexemplo2.png" alt="Logo" class="imagem-logo-rodape">
+                <p class="white-text">Copyright &copy; 2019 - Todos os Direitos Reservados</p>
+            </div>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        
+        <!-- MATERIALIZE JS -->  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+        </script>
+        
+        
+        <!-- JS --> 
+        <script>
+            // INICIALIZAÇÃO
+            $(document).ready(function(){
+                //MENU MOBILE
+                $(".button-collapse").sideNav();
+                
+                
+                //LOGIN
+                $(".btnlogin").sideNav();
+                
+                
+                //LINK INTERNO
+                $(".scrollspy").scrollSpy({
+                    scrollOffset: 0
+                })
+                //CAROUSEL
+                $(".carousel.carousel-slider").carousel({
+                    fullWidth: true
+                });
+                //MODAL
+                $(".modal").modal();
+                //TABS
+                $("ul.tabs").tabs();
+                //ESCONDER MENU AO CLICAR
+                $(".hide-menu").click(function(){
+                   $(".button-collapse").sideNav("hide"); 
+                });
+                //Autoplay para o carousel
+                function autoplay(){
+                    $(".carousel").carousel("next");
+                    setTimeout(autoplay, 5500);
+                }
+                autoplay();
+                });
+            
+                // ADICIONANDO COR NO MENU
+                $(window).on("scroll",function(){
+                if($(window).scrollTop() > 20) {
+                    $(".menu").addClass("cor-menu");
+                    } else{
+                    $(".menu").removeClass("cor-menu");
+                    }
+            });
+        </script>
+        
+    </body>
+</html>

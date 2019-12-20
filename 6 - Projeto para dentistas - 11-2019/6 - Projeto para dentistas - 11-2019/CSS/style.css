@@ -1,0 +1,699 @@
+/*----------GERAL----------*/
+body{
+    height: 100%;
+    width: 100%; 
+}
+
+
+
+.verdenav{
+    background-color: rgb(0,202,162);
+}
+.verdenavc{
+    color: rgb(0,202,162);
+}
+
+.imagem-logo img{
+    width: 160px;
+    height: 40px;
+    color: white;
+    margin-top: 11px;
+}
+
+
+.icons-nav a {
+    width: 40px;
+    height: 60px;
+    margin 1px;
+    padding: 0px;
+    color: rgb(0,202,162);
+}
+
+
+
+
+
+/*----------TITULO E PARAGRAFO----------*/
+.titulo {font-size: 2rem; text-transform: uppercase;}
+.titulo::after {content: '';display: block;width: 100px;border-top: 1px solid rgb(0,202,162); ;margin: 15px auto;}
+.paragrafo {line-height: 1.8rem; }
+
+
+/*----------MENU----------*/
+ 
+.menu{
+    color: rgb(0,202,162);
+    width: 100%;
+    height: 60px;
+    line-height: 56px;
+    position:fixed;
+    border-radius: 4px;
+    transition: background 0.9 linear;
+    background-color: white;
+    
+}
+.cor-menu{
+    background-color: rgba(290,290,290, 0.8); 
+    transition: background 0.9 linear;
+}
+
+
+.menumobile{
+    background-image: url(../img/textura9.png);
+}
+.menumobile li a{
+    color: white;
+    margin-bottom: 10px;
+}
+.menumobile li a:hover{
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.menumobile{
+    height: 80%;
+    max-width: 100%;
+}
+
+
+.form-login{
+    background-image: url(../img/textura4.png);
+    height: 70%;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.form-login label{
+    color: rgb(0,202,162);
+}
+.form-login legend{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+    font-weight: 900;
+}
+.form-login p{
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+
+#menu-desktop a{
+    color: rgb(0,202,162);
+    text-transform: uppercase;
+}
+
+
+
+
+
+/*----------HOME----------*/
+#home{
+    animation: mudarbg 20s infinite;
+    transition: background 0.1 linear;
+    background-image: url(../img/home1.png);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 560px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-radius: 3px;
+}
+@keyframes mudarbg{
+    50%{background-image: url(../img/home2.png);}
+    100%{background-image: url(../img/home1.png);}
+}
+
+.textohome{
+    color: white;
+    text-align: center; 
+}
+.textohome h1{
+    margin-top: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 48px;
+}
+
+.formfiltro select{
+    display: block;
+}
+.formenu{
+    margin: 0 auto 10px auto;
+    text-align: center;
+    color: black;
+    border-radius: 18px;
+    border: solid 0.5px rgb(0,202,162);
+}
+.formfiltro button{
+    width: 50%;
+    border-radius: 18px;
+} 
+
+
+
+
+
+/*----------SOBRE NÓS----------*/
+
+.carousel-item{
+    padding: 5px 5px 150px 5px;
+    border-radius: 2px;
+    margin: auto;
+}
+
+.divsobre{
+    background-image: url(../img/textura3.png);
+}
+.sobre{
+    border-radius: 15px; 
+    margin: 0px auto;
+    padding-top: 70px; 
+    min-height: 100%;
+}
+.sobre h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.sobre p{
+    color: black;
+    text-align: center;
+}
+.missao-visao-valores div{
+    height: 100%;
+    padding: 10px 0;
+    margin: 25px auto auto auto;
+}
+.missao-visao-valores .icon {
+    color: #fff;
+}
+.missao-visao-valores h3 {
+    font-size: 1.8rem;
+    color: #fff; 
+    text-transform: uppercase;
+    margin: 2px;
+}
+.missao-visao-valores p{
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.missao-visao-valores article{
+    margin-top: 20px;
+}
+
+
+/*----------SERVICOS----------*/
+.servicos{
+    background-image: url(../img/textura10.png);
+    margin: 0;
+    padding: 70px 0;
+}
+.card-image{
+    background-image: url(../img/Parapacientes01.png);
+    width: 100%;
+}
+
+
+    
+
+.card-content h4 b{
+    font-size: 30px;
+}
+.card-content h4{
+    font-size: 20px;
+    font-weight: 900;
+}
+.card-content ul{
+    text-decoration: underline;
+}
+.card-content p{
+    font-size: 18px;
+}
+.btn{
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+/*----------REDES SOCIAIS E CONTATO----------*/
+.contato{
+    padding-top: 70px;
+    background-image:  url(../img/textura4.png);
+    margin: auto;
+}
+.informacoes{
+    background-image: url(../img/textura2.png);
+    min-height: 560px;
+    padding: 30px;
+}
+.informacoes h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 40px;
+}
+.informacoes p{
+    text-align: left;
+}
+.mapa iframe{
+    min-height: 560px;
+    width: 100%;
+}
+
+
+
+
+btnefeito{
+    background-color: rgb(0,202,162);
+    color: white;
+    transition: background 3s
+}
+
+.btnefeito:hover{
+    background-color: white;
+    border: 1px solid  rgb(0,202,162);
+    color:  rgb(0,202,162);
+    margin: auto;
+    transition: background 0.2s
+}
+label:hover{
+    background-color: rgb(0,202,162);    
+}
+
+
+.formulario{
+    background-color: white;
+    padding: 2px 12px;
+    min-height: 560px;
+}
+.formulario h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+
+
+
+
+/*----------RODAPE----------*/
+.rodape{
+    background-image: url(../img/paradentistas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 2px 0;  
+}
+.rodape p{
+    margin-top: 0;
+}
+.imagem-logo-rodape{
+    width: 150px;
+    height: 60px;
+}
+
+
+
+
+/*========= RESPONSIVIDADE ==========*/
+
+
+/*========= CELULARES COM MAIS DE 350PX ==========*/
+@media only screen and (min-width: 350px) {
+    
+    
+    
+    #home{
+        height: 700px;
+        padding-top: 60px;
+    }  
+    
+    
+    
+    .icons-nav a {
+    width: 70px;
+    margin: 2px 5px;
+    color: rgb(0,202,162);
+}
+    .formfiltro{
+        margin-top: 80px;
+    }
+    .formenu{
+        margin-top: 20px;
+        width: 60%
+    }
+    
+}
+
+/*========= TABLETS COM MAIS DE 550PX ==========*/
+@media only screen and (min-width: 550px) {
+    
+    
+    .imagem-logo img{
+    width: 150px;
+    height: 40px;
+    margin-left: 7%;
+    margin-top: 11px;
+    }
+    
+    
+    
+    
+    .icons-nav a{
+    width: 100px;
+    padding: 0px;
+    margin: auto 15px;
+    color: rgb(0,202,162);}
+
+
+    
+    #home h1{
+        font-size: 65px;
+        letter-spacing: normal;
+    }
+    .formfiltro{
+        margin-top: 90px;
+    }
+    .formenu{
+        margin-top: 20px;
+        width: 50%
+    }
+    .container{
+        max-width: 80%;
+    }
+    
+    .btn{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+}
+
+}
+
+/*========= TABLETS COM MAIS DE 700PX ==========*/
+@media only screen and (min-width: 700px) {
+    
+    .formfiltro{
+        margin-top: 90px;
+    }
+    .formfiltro button{
+        width: 30%;
+    }
+    .formenu{
+        margin-top: 20px;
+        width: 40%
+    }
+    
+    
+    .container{
+        width: 80%;
+    }
+    .dentistas, .pacientes{
+        width: 50%;
+        margin: auto;
+    }
+    .carousel-slider{
+        max-width: 97%;
+        max-height: 100%;
+        margin: auto;
+    }
+    .carousel-sobre{
+        width: 60%;
+    }
+    .card-content{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 500px;
+        max-height: 500px;
+        margin: auto; 
+    }
+    .rodape{
+        background-position: bottom center;
+    }
+    .missao-visao-valores article{
+        padding: 0px 7%;
+    }
+    
+    .btn{
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+}
+}
+
+
+/*========= DESKTOPS DE 1000px a 1400px ==========*/
+@media only screen and (min-width: 950px) {
+    
+    
+    .imagem-logo img{
+        margin-top: 10px;
+        width: 250px;
+        height: 50px;
+    }
+    
+    
+    nav .imagem-logo{
+        padding-left: 5%;
+    }
+
+    nav ul li{
+        font-weight: 700;
+        text-align: center;
+    }
+    .icons-nav a{
+    width: 90px;
+    height: 60px;
+    margin: 0px ;
+    padding: 0;
+    color: rgb(0,202,162);}
+    
+    
+    .menu{
+        height: 70px;}
+
+    .menu li{
+        margin: auto;
+        padding: 7px;}
+
+    #home{
+        height: 770px;
+    }
+    .home{
+        padding-top: 30px;}
+
+    .container{
+        width: 70%;}
+    
+    
+    .missao-visao-valores{
+        height: 500px;
+        box-sizing: border-box;
+        width: 100%;}
+
+    .missao-visao-valores p{
+        font-size: 18px;
+    }
+
+    .missao-visao-valores h3{
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .missao-visao-valores .container{
+        width: 100%;
+        margin: auto;}
+
+    .missao-visao-valores article{
+        width: 32%;
+        float: left;
+        padding: 60px 2%;
+    }
+
+    .visao{
+        margin: 0 2%;}
+
+    .servicos{
+        width: 100%;
+        margin: auto;}
+    
+
+    .card-content{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 500px;
+        max-height: 500px;
+        margin: auto;}
+    
+    .carousel-sobre{
+        width: 90%;
+    }
+    
+
+    .pacientes, .dentistas{ 
+        min-width: 50%;  
+}
+
+    .mapa, .informacoes, .formulario{
+        width: 100%;
+        
+        padding: 12px;
+        margin: auto;}
+}
+    
+    
+
+/*========= DESKTOPS DE 1400px a 1650px ==========*/
+@media only screen and (min-width: 1400px){
+
+    
+    .imagem-logo img{
+        margin-top: 10px;
+        width: 250px;
+        height: 50px;
+    }
+    
+    .icons-nav a{
+    width: 90px;
+    height: 60px;
+    margin: 0 100px 0 0 ;
+    padding: 0;
+    color: rgb(0,202,162);}
+    
+    #home h1{
+        padding: 0 100px;
+        letter-spacing: 1px;
+        
+    }
+    #home{
+        height: 870px;
+    }
+    
+    .carousel-sobre{
+        width: 70%;
+    }
+    
+    .formfiltro{
+        margin-top: 150px;
+    }
+    .formfiltro button{
+        width: 20%;
+    }
+    .formenu{
+        margin-top: 30px;
+        width: 30%
+    }
+    
+    
+    
+    .pacientes, .dentistas{
+        min-width: 40%;
+    }
+    .pacientes{
+        margin-right: 20%;
+    }
+    
+    .rodape{
+        height: 120px;
+        background-position: left;
+    }
+}
+
+
+/*========= DESKTOPS DE 1650px a 1920px ==========*/
+@media only screen and (min-width: 1400px){
+
+    #home{
+        height: 1060px;
+    }
+    #home h1{
+        margin-top: 80px;
+        padding: 0 200px;
+    }
+    
+    #sobre{
+        padding-top: 20px;
+        height: 1060px;
+    }
+    #servicos{
+        height: 1060px;
+        padding-top: 80px;
+    }
+    #contato{
+        height: 1060px;
+        padding-top: 80px;
+    }
+    
+    .formfiltro{
+        margin-top: 220px;
+    }
+    .formfiltro button{
+        width: 20%;
+        margin-top: 10px;
+    }
+    .formenu{
+        margin-top: 30px;
+        width: 30%
+    }
+    
+    .card-content{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 450px;
+        max-height: 500px;
+        margin: auto;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
